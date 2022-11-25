@@ -9,6 +9,8 @@ export const Container = () => {
     const [bmi, setBmit] = useState('')
     const [msg, setMsg] = useState('');
 
+    const [show , setShow] = useState(false);
+
     let imgUrl;
 
     // img
@@ -28,9 +30,12 @@ export const Container = () => {
 
     const bmiCalculater = (e) => {
         e.preventDefault();
+        setShow(!show)
+
         if (weight === 0 || height === 0) {
             alert('키와 몸무게를 입력해주세요ㅠ_ㅠ')
             setMsg('');
+            setShow(show);
         } else {
             let bmi = weight / (height / 100) ** 2;
             setBmit(bmi.toFixed(2));
@@ -94,7 +99,7 @@ export const Container = () => {
                 </div>
             </div>
 
-            <div className="img-container">
+            <div className={!show ? "img-container" : "img-container on"}>
                 <img src={imgUrl} alt="img..." />
             </div>
 
