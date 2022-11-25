@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.container {
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 760px;
+}
+
+.text-content {
+    padding: 0.3rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.77);
+}
+
+.text-content .title {
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-content .logo {
+    font-size: 1rem;
+    position: absolute;
+    top: -7px;
+    letter-spacing: 1px;
+}
+
+.text-content .logo::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+}
+
+.infomatin {
+    margin: 1.2rem 0;
+    padding: 1rem 0.6rem;
+    display: flex;
+    flex-direction: column;
+    background: #1b1a1a;
+    font-family: 'Poppins', sans-serif;
+}
+
+.infomatin p {
+    margin: 3px 0;
+}
+
+.box {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+}
+
+.box p {
+    font-size: 1.5rem;
+}
+
+.red {
+    font-size: 2rem;
+    color: #f34421;
+    position: relative;
+}
+
+.red::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    background: #f34421;
+}
+
+.img-container {
+    margin: 2rem auto;
+    width: 150px;
+    height: 100px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.bmi-container {
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.bmi-header ul {
+    display: grid;
+    grid-template-columns: 28% 16% 14% 42%;
+    width: 100%;
+}
+
+.bmi-body ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 15% 15% 40%;
+    align-items: center;
+}
+
+.body-item {
+    padding: 1rem;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body-item:first-child {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    background-color: #329AE3;
+}
+
+.body-item:nth-child(2) {
+    background-color: #95C520;
+}
+
+.body-item:nth-child(3) {
+    background-color: #EE942A;
+}
+
+.body-item:nth-child(4) {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-color: #F15232;
+}
+
+@media (max-width :480px) {
+    .infomatin p {
+        letter-spacing: 0;
+        font-size: 0.8rem;
+    }
+
+    .bmi-body ul {
+        align-items: inherit;
+    }
+
+    .bmi-body ul .body-item {
+        padding: 0.25rem;
+        font-size: 0.75rem;
+        height: 45px;
+    }
+
+    .box p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
