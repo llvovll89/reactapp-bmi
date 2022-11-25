@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/reactapp-bmi/static/css/main.8c764d33.css",
-    "main.js": "/reactapp-bmi/static/js/main.9ea06018.js",
+    "main.css": "/reactapp-bmi/static/css/main.9e2139c1.css",
+    "main.js": "/reactapp-bmi/static/js/main.1b7c7c8a.js",
     "static/media/pig.png": "/reactapp-bmi/static/media/pig.27722379a7eae3c2d283.png",
     "static/media/up.png": "/reactapp-bmi/static/media/up.80ac81a3812696f371a0.png",
     "static/media/middle.png": "/reactapp-bmi/static/media/middle.08578ac604a0bc8625fe.png",
     "static/media/small.png": "/reactapp-bmi/static/media/small.c80f4eb9b6cf36997d14.png",
     "index.html": "/reactapp-bmi/index.html",
-    "main.8c764d33.css.map": "/reactapp-bmi/static/css/main.8c764d33.css.map",
-    "main.9ea06018.js.map": "/reactapp-bmi/static/js/main.9ea06018.js.map"
+    "main.9e2139c1.css.map": "/reactapp-bmi/static/css/main.9e2139c1.css.map",
+    "main.1b7c7c8a.js.map": "/reactapp-bmi/static/js/main.1b7c7c8a.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c764d33.css",
-    "static/js/main.9ea06018.js"
+    "static/css/main.9e2139c1.css",
+    "static/js/main.1b7c7c8a.js"
   ]
 }
