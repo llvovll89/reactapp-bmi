@@ -1,101 +1,92 @@
-
-.form {
+#form {
     display: flex;
     width: 100%;
     flex-direction: column;
     row-gap: 1rem;
-    padding: 0.5rem;
+    padding: 0.5rem 2rem;
 }
 
-.form form {
+.content {
+    width: 100%;
+    margin: 12px auto;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: #EFE99A;
+    color: #29293F;
+    padding: 1rem;
 }
 
-.content input {
-    outline: none;
-    border: 1px solid #ccc;
-    color: #fff;
-    background: transparent;
+.content label {
+    font-size: 1.25rem;
+    line-height: 1.5;
 }
 
-form input {
-    padding: 0 5px;
-    width: 60px;
+#form input {
+    padding: 12px 20px;
+    width: 100px;
     text-align: center;
-    border: 1px solid #ddd;
-    vertical-align: middle;
-    transition: all 0.4s linear;
+    font-size: 1rem;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s all ease;
 }
 
-form input:focus {
-    background: rgb(255, 255, 255);
-    color: #000;
-    transition: all 0.4s linear;
+#form input:hover,
+#form input:focus {
+   outline: 2px solid skyblue;
+   transition: 0.3s all ease;
+}
+
+#form span {
+    font-size: 1.25rem;
 }
 
 .content.btnContent {
     width: 100%;
     gap: 1rem;
+    border-radius: 12px;
 }
 
 .content.btnContent .btn {
-    width: 100px;
-    padding: 6px 4px;
+    padding: 16px 20px;
+    width: 140px;
+    height: 50px;
     cursor: pointer;
-    border: 0;
-    outline: 0;
     font-weight: 500;
     border-radius: 3px;
+    transition: 0.3s all ease;
 }
 
 .btn.submitBtn {
     background: #0AAF6B;
     color: #fff;
 }
+
 .btn.refreshBtn {
-    background: rgb(219, 193, 193);
+    background: rgb(232, 61, 61);
     color: #fff;
 }
 
+.btn.refreshBtn:hover, 
+.btn.submitBtn:hover {
+    background: #29293F;
+    transition: 0.3s all ease;
+}
 
-@media (max-width: 480px){
-    .form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .form form {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        row-gap: 0.5rem;
-        align-items: center;
+@media (max-width: 640px) {
+    #form {
+        padding: 0;
+        row-gap: 0;
     }
     .content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        padding: 0.7rem;
-        border: 1px solid #ccc;
-        border-radius: 6px;
-        background: #242323;
-    }
-    .form form label {
-        margin-right: 12px;
+        border-radius: 12px;
+        padding: 0.75rem;
     }
 
-    .form .content span {
-        margin-left: 12px;
+    #form span,
+    #form label {
+        font-size: 1.1rem;
     }
-    
-    form input {
-        padding: 2px 5px;
-        width: 100px;
-        height: 30px;
-        text-align: center;
-        border: 1px solid #ddd;
-        vertical-align: middle;
-    }
-    
 }

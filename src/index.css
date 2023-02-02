@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;700&display=swap');
+@font-face {
+  font-family: 'Chosunilbo_myungjo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {
   margin: 0;
@@ -27,8 +33,13 @@ img {
 .App {
   min-height: 100vh;
   padding: 0.35rem;
-  background: #141214;
-  color: #fff;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+button, input {
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
